@@ -1,0 +1,212 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+body
+{
+    background: rgb(100, 100, 100);
+    font-family: 'Roboto', sans-serif;
+}
+
+header
+{
+    background: rgb(0, 100, 200);
+    text-align: center;
+    margin: 0 0 5% 0;
+}
+
+header ul li
+{
+    display: inline-block;
+    margin: 1% 2%;
+}
+
+header a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px rgb(0, 150, 250);
+}
+
+header a:hover
+{
+    text-decoration: underline;
+}
+
+#pesquisar form input
+{
+    background: rgb(0, 150, 250);
+    border: none;
+    padding: 5% 5%;
+}
+
+#pesquisar form input::placeholder
+{
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+article
+{
+    background: rgb(75, 75, 75);
+    margin: 0% 5% 5% 5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+article .jogos
+{
+    border: solid black;
+    border-width: 5px;
+    border-radius: 5%;
+    text-align: justify;
+}
+
+article .jogos img
+{
+    filter: brightness(125%);
+}
+
+#registro
+{
+    padding: 5% 5%;
+}
+
+#registro form
+{
+    padding: 1% 1%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#registro form label
+{
+    display: block;
+}
+
+#registro form input
+{
+    border: solid black;
+    padding: 0.75% 0.75%;
+    width: 25%;
+    background: rgb(255, 255, 255);
+}
+
+#registro .submit input:hover
+{
+    background: rgb(0, 150, 250);
+    transition: 0.5s;
+    font-size: 150%;
+}
+
+#avaliacoes
+{
+    text-align: left;
+    margin: 0 0 0 1%;
+    text-shadow: 3px 3px black;
+}
+
+.jogos
+{
+    display: inline-block;
+    width: 12%;
+    margin: 5% 5% 5% 5%;
+    border: 5%;
+    background: rgb(100, 100, 100);
+    padding: 1% 1%;
+    vertical-align: middle;
+}
+
+.jogos img
+{
+    width: 100%;
+    margin: 0 0 5% 0;
+    height: auto;
+    box-shadow: 5px 5px 5px black;
+}
+
+footer
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+article
+{
+    padding: 1% 1%;
+}
+
+#mapa
+{
+    text-align: center;
+    padding: 1% 1%;
+    filter: opacity(50%);
+    border: solid black;
+    border-radius: 5%;
+}
+
+#mapa:hover
+{
+    filter: opacity(100%);
+    transition: 1s;
+}
+
+@media screen and (max-width: 480px)
+{
+    body
+    {
+        width: auto;
+    }
+
+    header, article, footer
+    {
+        width: auto;
+    }
+
+    header ul
+    {
+        width: auto;
+    }
+
+    header ul #pesquisar
+    {
+        width: 50%;
+        padding: 0% 0% 0% 23%;
+    }
+
+    header ul li
+    {
+        display: block;
+    }
+
+    article .jogos
+    {
+        width: 50%;
+        padding: 1% 5%;
+    }
+
+    article #registro form
+    {
+        font-size: 115%;
+    }
+
+    article #registro form input
+    {
+        width: 75%;
+        padding: 2% 2%;
+    }
+
+    article #registro .submit input
+    {
+        font-size: 100%;
+    }
+
+    #mapa
+    {
+        width: 95%;
+    }
+}
